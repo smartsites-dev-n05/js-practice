@@ -1,0 +1,15 @@
+#IDE
+/nbproject
+/.idea
+
+#mac
+*.DS_Store
+
+#logs
+error_log
+
+#node-modules
+node_modules/
+
+#vidoes
+vidoes/

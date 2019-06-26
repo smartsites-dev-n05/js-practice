@@ -1,0 +1,78 @@
+.banner{
+	@media (min-width: 992px) {
+		min-height: 950px;
+		position: relative;
+		z-index: 2;
+		&:before,
+		&:after{
+			position: absolute;
+			bottom: -53px;
+			left: 0;
+			content: '';
+			background: url(../images/left-shape-underbanner.png) no-repeat left;
+			height: 250px;
+			width: 50%;
+			transform: rotate(-1.75deg);
+		}
+		&:after{
+			left: auto;
+			right: 0;
+			bottom: 50px;
+			transform: rotate(-3deg);
+			z-index: -1;
+			background: url(../images/right-shape-underbanner.png) no-repeat right;
+		}
+	}
+	margin-bottom: 1rem;
+	img{
+		width: 100%;
+	  	object-fit: cover;
+	  	position: absolute;
+		height: 950px;
+		@media (min-width: 992px) {
+
+		}
+	}
+
+  	.text-wrap{
+		color: $white;
+		padding: 2rem 0;
+		@media (min-width: 768px) {
+			max-width: 56%;
+			padding-top: 10rem;
+		}
+  		h1{
+  			line-height: 0.9;
+  			text-transform: capitalize;
+  			span{
+  				text-transform: uppercase;
+  			}
+  		}
+  		h2{
+  			text-transform: capitalize;
+			color: $white;
+  		}
+  		.btn{
+  			font-size: 18px;
+  			padding: 0.8rem 3.5rem;
+  		}
+  	}
+  	.form{
+  		padding: 2rem;
+  		background-color: $blue-200;
+		@media (min-width: 768px){
+			margin-top: 4rem;
+		}
+
+  	}
+  	.form-header{
+    	text-align: center;
+    	color: $white;
+  	}
+  	.form-footer{
+  		.btn{
+  			width: 100%;
+  		}
+  	}
+
+}
