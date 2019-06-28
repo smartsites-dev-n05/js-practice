@@ -3607,6 +3607,60 @@ h2 {
   color: #064d8a;
 }
 
+.popup {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s all ease-in-out;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.popup.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup .content-wrapper {
+  max-width: 500px;
+  background: #f8f9fa;
+}
+
+.popup .content-wrapper .menuLists {
+  padding: 1.5rem .5rem;
+  background: #ccc;
+  color: #000;
+  list-style-type: none;
+}
+
+.popup .content-wrapper .menuLists li {
+  margin: .5rem;
+  cursor: pointer;
+}
+
+.popup .content-wrapper .orderLists {
+  padding: 1.5rem .5rem;
+  background: #ff0000;
+  color: #000;
+  list-style-type: none;
+}
+
+.popup .content-wrapper .orderLists li {
+  margin: .5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
 .site-footer .footer-top a {
   color: #000;
 }
